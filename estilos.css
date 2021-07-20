@@ -1,0 +1,668 @@
+/*RESETEO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ESTRUCTURA*/
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: background-color .5s;
+ }
+  /*HEADER LOGO*/
+.header {
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.headerLogo img {
+    width: 110px;
+    margin-top: 20px;
+}
+ /*MENU*/
+.navMenu {
+    background-color: #FF6833;
+    font-size: 16px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+.navMenu ul {
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul li .active {
+    color: yellow;
+    font-weight: bold;    
+}
+/*SECTION PORTADA*/
+.section {
+    background-image: url(img/home599.jpg);
+    height: 280px;
+}
+.sectionDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 66%;
+    height: 90%;
+    margin-left: 40px;
+    padding: 4%;
+}
+.sectionDiv h1 {
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+.sectionDiv p {
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*MAIN*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 54vh;
+}
+.mainSection {
+    width: 90%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 2%;  
+}
+.mainSection article {
+    text-align: center;
+    padding: 6% 3%;
+}
+.mainSection h2 {
+    color: blue;
+    font-size: 18px;
+}
+.mainSection p {
+    margin: 10px;
+    font-size: 16px;
+}
+/*ASIDE*/
+.mainAside {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+    text-align: center;
+}
+.mainAside h3 {
+    font-size: 21px;
+    color: black;
+}
+.mainAside p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.key {
+    animation-name: titilar;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.24,.26,.88,.9);
+    animation-duration: 2s;
+    animation-delay: 0;
+}
+@keyframes titilar {
+    0% {
+
+    }
+    50% {
+        color:yellow;
+    }
+    100% {
+        color: rgb(233, 116, 21);
+        text-decoration: underline;
+    }
+}
+/* CUIDADOS */
+.cuidadosPrincipal{ 
+    margin-top: 10px;
+}
+.divCuidados {
+    text-align: center;
+}
+.divCuidados h3 {
+    color: red;
+    font-size: 24px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.cuidadosSecundario {
+    margin: 20px 70px;
+    text-align: center;
+    border: solid 2px coral;
+}
+.cuidadosSecundario h4 {
+    font-size: 20px;
+}
+.cuidadosSecundario p {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.cuidadosColor {
+    color: coral;
+    font-weight: bolder;
+}
+.cuidadosNegrita {
+    text-transform: uppercase;
+}
+/*GRILLA*/
+.grilla {
+    width: 75%;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 14%;
+}
+.grilla h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 18px;
+    text-align: center;
+}
+.grilla th {
+    background-color: rgb(202, 72, 25);
+    font-size: 16px;
+    padding: 8px;
+}
+.grilla tr {
+    background-color: coral;
+    font-size: 16px;
+    text-align: center;
+}
+/*FOOTER*/
+.footer {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    margin-top: 18px;
+}
+.footer p {
+    color: white;
+    font-size: 18px;
+    margin: 8px;
+    font-style: italic;
+}
+/*//////////SECCIONES//////////*/
+/*NOSOTROS*/
+.nosotros {
+    display: flex;
+    height: 40vh;
+    margin: 20px;
+}
+.nosotros article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.nosotros article h1 {
+    font-size: 20px;
+    color: red;
+}
+.nosotros article p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* GALERIA */
+.sectionGal {
+    margin: 5px;
+}
+.sectionGal h2 {
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+}
+.gal {
+    display: flex;
+    flex-direction: column;
+}
+.gal img {
+    width: 100%;
+    margin-top: 5px;
+}
+/*ENTRENAMIENTOS*/
+.sectionEntrenamiento {
+    margin: 30px;
+}
+.sectionEntrenamiento h1 {
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+.articleEntrenamiento {
+    display: flex;
+    flex-direction: column;
+}
+.articleEntrenamiento h2 {
+    font-size: 28px;
+    color: blue;
+    margin-bottom: 20px;
+}
+.articleEntrenamiento p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.divEntrenamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.videoContainer {
+    width: 50%;
+    height: 500px;
+}
+/* PLANES */
+.planes {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.planes h1 {
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+.divPrincipalPlanes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divPlanes {
+    width: 80%;
+    height: 13vh;
+    margin: 40px 70px;
+    background-color: #FF6833;
+    text-align: center;
+}
+.divPlanes h3 {
+    margin-top: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.divPlanesSecundario {
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    margin: 25px 45px;
+    padding-top: 5px;
+}
+.divPlanesSecundario h4 {
+    color: white;
+    font-size: 20px;
+}
+.divPlanesSecundario p {
+    color: white;
+    font-size: 14px;
+}
+/* CONTACTO */
+.titulo {
+    margin: 20px;
+    text-align: center;
+}
+.titulo h1 {
+    color: red;
+    font-size: 30px;
+}
+.consulta {
+    margin: 20px;
+}
+.consulta h2 {
+    font-size: 26px;
+    color: blue;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.general {
+    background-color: rgb(78, 77, 77);
+    padding: 15px;
+    border: 3px solid black;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.formInput {
+    padding: 5px;
+    margin-bottom: 10px; 
+    border: 2px solid black;   
+}
+.actividad {
+    font-size: 22px;
+    font-weight: bold;
+}
+.actividadSelect {
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.lesion {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.lesion input {
+    margin-bottom: 10px;
+}
+.lesionLabel {
+    font-size: 20px;
+}
+.consulta {
+    margin-top: 20px;
+    font-size: 26px;
+}
+.textarea {
+    height: 30vh;
+}
+.enviar {
+    margin-top: 10px;
+    width: 20%;
+    height: 5vh;
+    background-color: coral;
+    border: 2px solid black;
+}
+.limpiar {
+    margin-top: 10px;
+    width: 20%;
+    height: 5vh;
+    border: 2px solid black;
+}
+/*MEDIA QUERIES*/
+@media (min-width: 600px) and (max-width: 799px) {
+    body {
+        width: 100%;
+    }
+    .section {
+        background-image: url(img/home799.jpg);
+        background-size: cover;
+    }
+    .main {
+        flex-direction: row;
+        height: 38vh;
+    }
+    .mainSection article {
+        padding: 4% 3%;
+    }
+    .mainSection p {
+        margin: 0%;
+    }
+    .mainAside {
+        margin: 0 5% 5% 0;
+    }
+    /*SECTION NOSOTROS*/
+    .nosotros {
+        height: 40vh;
+    }
+    .nosotros article h1 {
+        font-size: 24px;
+    }
+    .nosotros article p {
+        font-size: 20px;
+    }
+    /* PLANES */
+    .divPlanes {
+        height: 18vh;
+    }
+    .divPlanesSecundario {
+        margin: 35px 45px;
+        height: 12vh;
+        padding-top: 15px;
+    }
+}    
+@media (min-width: 800px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+    }
+    .section {
+        background-image: url(img/home1023.jpg);
+        background-size: cover;
+        height: 300px;
+    }
+    .main {
+        height: 35vh;
+    }
+    article {
+        width: 100%;
+    }
+    .mainaside {
+        width: 80%;
+        margin: 20px;
+    }
+    /* CUIDADOS */
+    .cuidadosPrincipal {
+        margin-top: 100px;
+    }
+    .cuidadosSecundario {
+        margin: 30px 170px;
+    }
+    /*SECTION NOSOTROS*/
+    .nosotros {
+        height: 30vh;
+    }
+    .nosotros article {
+        justify-content: center;
+    }    
+    .gal {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gal img {
+        width: 40%;
+        margin: 5px;
+    }
+    /* SECTION PLANES */
+    .divPlanes {
+        height: 16vh;
+    }
+    .divPlanesSecundario {
+        height: 12vh;
+        padding-top: 15px;
+    }
+}
+@media (min-width:1024px) {
+    body {
+        width: 100%;
+    }
+    .header {
+        height: 250px;
+    }
+    .headerLogo img {
+        width: 200px;
+    }
+     /*MENU*/
+    .navMenu {
+        font-size: 24px;
+    }
+    .navMenu ul {
+        height: 50px;
+    }
+    /*SECTION PORTADA*/
+    .section {
+        background-image: url(img/home1980.jpg);
+        background-size: cover;
+        height: 430px;
+    }
+    .sectionDiv {
+        width: 47%;
+        height: 80%;
+        margin-left: 30px;
+    }
+    .sectionDiv h1 {
+        font-size: 60px;
+    }
+    .sectionDiv p {
+        font-size: 23px;
+        margin-top: 1%;
+    }
+    /*MAIN*/
+    .main {
+        flex-direction: row;
+       height: 50vh;
+    }
+    .mainSection {
+        width: 50%;
+    }
+    .mainSection h2 {
+        font-size: 28px;
+    }
+    .mainSection p {
+        font-size: 20px;
+    }
+    /*ASIDE*/
+    .mainAside {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 2% 4% 2%;
+    }
+    .mainAside h3 {
+        font-size: 30px;
+        margin: 0 22% 5% 0;
+        padding: 0 18%;
+    }
+    .mainAside p {
+        font-size: 22px;
+        margin-top: 10px;
+        padding-right: 20%;
+    }
+    /* CUIDADOS */
+    .cuidadosPrincipal {
+        margin-top: 0;
+    }
+    .cuidadosPrincipal h3 {
+        font-size: 36px;
+    }
+    .cuidadosSecundario {
+        margin: 30px 220px;
+    }
+    .cuidadosSecundario h4 {
+        font-size: 32px;
+    }
+    .cuidadosSecundario p {
+        font-size: 26px;
+    }
+    /*GRILLA*/
+    .grilla {
+        width: 70%;
+        height: 450px;
+        margin-left: 15%;
+    }
+    .grilla h3 {
+        font-size: 26px;
+        margin: 24px;
+    }
+    .grilla th {
+        font-size: 24px;
+    }
+    .grilla tr {
+        font-size: 22px;
+    }
+    /*FOOTER*/
+    .footer {
+        height: 50px;
+        margin-top: 60px;
+    }
+    .footer p {
+        font-size: 24px;
+        margin: 12px;
+    }
+    /*SECCIONES*/
+    /*ENTRENAMIENTOS*/
+    .sectionEntrenamiento h1 {
+        font-size: 40px;
+    }
+    .articleEntrenamiento h2 {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .articleEntrenamiento p {
+        font-size: 24px;
+    }
+    /*NOSOTROS*/
+    .nosotros article {
+        justify-content: center;
+    } 
+    .nosotros article h1 {
+        font-size: 26px;
+    }
+    .nosotros article p {
+        font-size: 22px;
+    } 
+    .sectionGal h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }  
+    .gal {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gal img {
+        width: 45%;
+        margin: 5px;
+    }    
+    /* PLANES */
+    .divPrincipalPlanes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }   
+    .planes h1 {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .divPlanes {
+        width: 45%;
+        height: 22vh;
+        margin: 50px 20px;
+    }    
+    .divPlanes h3 {
+        font-size: 32px;
+    }
+    .divPlanesSecundario{
+        height: 15vh;
+        padding-top: 18px;
+    }
+    .divPlanesSecundario h4 {
+        font-size: 28px;
+    }
+    .divPlanesSecundario p {
+        font-size: 22px;
+    }
+    /* CONTACTO */
+    .consulta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .general {
+        width: 50%;
+    }
+    .form {
+        width: 95%;
+    }
+}
