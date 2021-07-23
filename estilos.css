@@ -12,13 +12,11 @@ body {
 a {
     text-decoration: none;
     color: black;
-    transition: background-color .5s;
- }
+}
   /*HEADER LOGO*/
 .header {
     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-    width: 100%;
-    height: 145px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -36,40 +34,43 @@ a {
     top: 0;
 }
 .navMenu ul {
-    width: 100%;
-    height: 40px;
+    height: auto;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+}
+.navMenu ul li {
+    margin: 5px;
 }
 ul li .active {
     color: yellow;
     font-weight: bold;    
 }
-/*SECTION PORTADA*/
+/*PORTADA*/
 .section {
     background-image: url(img/home599.jpg);
-    height: 280px;
+    background-size: cover;
+    height: auto;
 }
 .sectionDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 66%;
-    height: 90%;
-    margin-left: 40px;
-    padding: 4%;
+    width: 90%;
+    height: auto;
+    margin-left: 19px;
+    padding: 3%;
 }
 .sectionDiv h1 {
     color: red;
-    font-size: 30px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 12px;
 }
 .sectionDiv p {
     color: yellow;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 /*MAIN*/
@@ -77,7 +78,7 @@ ul li .active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 54vh;
+    height: auto;
 }
 .mainSection {
     width: 90%;
@@ -134,16 +135,16 @@ ul li .active {
         text-decoration: underline;
     }
 }
-/* CUIDADOS */
+/*CUIDADOS*/
 .cuidadosPrincipal{ 
-    margin-top: 10px;
+    margin-top: 16px;
 }
 .divCuidados {
     text-align: center;
 }
 .divCuidados h3 {
     color: red;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -156,7 +157,7 @@ ul li .active {
     font-size: 20px;
 }
 .cuidadosSecundario p {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 .cuidadosColor {
@@ -168,40 +169,39 @@ ul li .active {
 }
 /*GRILLA*/
 .grilla {
-    width: 75%;
-    height: 345px;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 14%;
+    margin: 4%;
 }
 .grilla h3 {
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     margin: 18px;
     text-align: center;
 }
 .grilla th {
     background-color: rgb(202, 72, 25);
-    font-size: 16px;
+    font-size: 12px;
     padding: 8px;
 }
 .grilla tr {
     background-color: coral;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
 }
 /*FOOTER*/
 .footer {
     display: flex;
-    width: 100%;
-    height: 40px;
+    height: auto;
     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
     margin-top: 18px;
 }
 .footer p {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     margin: 8px;
     font-style: italic;
 }
@@ -209,7 +209,7 @@ ul li .active {
 /*NOSOTROS*/
 .nosotros {
     display: flex;
-    height: 40vh;
+    height: auto;
     margin: 20px;
 }
 .nosotros article {
@@ -225,7 +225,7 @@ ul li .active {
     font-size: 18px;
     margin-top: 10px;
 }
-/* GALERIA */
+/*GALERIA*/
 .sectionGal {
     margin: 5px;
 }
@@ -247,7 +247,7 @@ ul li .active {
     margin: 30px;
 }
 .sectionEntrenamiento h1 {
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     color: red;
 }
@@ -255,35 +255,37 @@ ul li .active {
     display: flex;
     flex-direction: column;
 }
-.articleEntrenamiento h2 {
-    font-size: 28px;
-    color: blue;
-    margin-bottom: 20px;
-}
-.articleEntrenamiento p {
-    margin-bottom: 30px;
-    font-size: 18px;
-}
 .divEntrenamiento {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 0;
 }
-.videoContainer {
-    width: 50%;
-    height: 500px;
+.divEntrenamiento h2 {
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 20px;
 }
-/* PLANES */
+.divEntrenamiento p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.videoContainer {
+    width: 90%;
+    height: 350px; /* VER */
+}
+/*PLANES*/
 .planes {
+    height: auto;
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
 .planes h1 {
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     color: red;
+    margin-top: 15px;
 }
 .divPrincipalPlanes {
     display: flex;
@@ -292,20 +294,23 @@ ul li .active {
 }
 .divPlanes {
     width: 80%;
-    height: 13vh;
+    height: auto;
     margin: 40px 70px;
     background-color: #FF6833;
     text-align: center;
 }
 .divPlanes h3 {
     margin-top: 15px;
-    font-size: 28px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 .divPlanesSecundario {
     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-    margin: 25px 45px;
-    padding-top: 5px;
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .divPlanesSecundario h4 {
     color: white;
@@ -313,9 +318,9 @@ ul li .active {
 }
 .divPlanesSecundario p {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
-/* CONTACTO */
+/*CONTACTO*/
 .titulo {
     margin: 20px;
     text-align: center;
@@ -334,7 +339,7 @@ ul li .active {
     text-align: center;
 }
 .general {
-    background-color: rgb(78, 77, 77);
+    background-color: rgb(190, 184, 184);
     padding: 15px;
     border: 3px solid black;
 }
@@ -388,18 +393,36 @@ ul li .active {
     height: 5vh;
     border: 2px solid black;
 }
-/*MEDIA QUERIES*/
-@media (min-width: 600px) and (max-width: 799px) {
-    body {
-        width: 100%;
-    }
+/*////////MEDIA QUERIES////////*/
+@media (min-width: 280px) and (max-width: 400px) {
     .section {
-        background-image: url(img/home799.jpg);
-        background-size: cover;
+        background-image: url(img/home360.jpg);
+    }    
+    .grilla {
+        display: none;
+    }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+    .navMenu {
+        font-size: 20px;
+    }
+    .navMenu ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .sectionDiv {
+        width: 55%;
+        padding: 10px 30px;
+    }
+    .sectionDiv h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .sectionDiv p {
+        font-size: 24px;
     }
     .main {
         flex-direction: row;
-        height: 38vh;
     }
     .mainSection article {
         padding: 4% 3%;
@@ -410,59 +433,63 @@ ul li .active {
     .mainAside {
         margin: 0 5% 5% 0;
     }
-    /*SECTION NOSOTROS*/
-    .nosotros {
-        height: 40vh;
+    .grilla h3 {
+        font-size: 20px;
     }
+    .grilla th {
+        font-size: 16px;
+    }
+    .grilla tr {
+        font-size: 16px;
+    } 
+    /*////////SECCIONES////////*/   
+    /*NOSOTROS*/
     .nosotros article h1 {
         font-size: 24px;
     }
     .nosotros article p {
         font-size: 20px;
     }
+    /*ENTRENAMIENTOS*/
+    .articleEntrenamiento h1 {
+        font-size: 30px;
+    }
+    .divEntrenamiento h2 {
+        font-size: 24px;
+    }
+    .divEntrenamiento p {
+        font-size: 20px;
+        margin: 5px 12%;
+    }
+    .videoContainer {
+        width: 75%;
+        margin-top: 10%;
+    }
     /* PLANES */
-    .divPlanes {
-        height: 18vh;
+    .planes h1 {
+        font-size: 30px;
+    }
+    .divPlanes h3 {
+        font-size: 24px;
     }
     .divPlanesSecundario {
         margin: 35px 45px;
-        height: 12vh;
         padding-top: 15px;
     }
-}    
-@media (min-width: 800px) and (max-width: 1023px) {
-    body {
-        width: 100%;
+    .divPlanesSecundario h4 {
+        font-size: 26px;
     }
+    .divPlanesSecundario p {
+        font-size: 18px;
+    }
+}      
+@media (min-width: 800px) and (max-width: 1023px) {
     .section {
         background-image: url(img/home1023.jpg);
         background-size: cover;
-        height: 300px;
-    }
-    .main {
-        height: 35vh;
-    }
-    article {
-        width: 100%;
-    }
-    .mainaside {
-        width: 80%;
-        margin: 20px;
-    }
-    /* CUIDADOS */
-    .cuidadosPrincipal {
-        margin-top: 100px;
-    }
-    .cuidadosSecundario {
-        margin: 30px 170px;
-    }
-    /*SECTION NOSOTROS*/
-    .nosotros {
-        height: 30vh;
-    }
-    .nosotros article {
-        justify-content: center;
-    }    
+        }
+    /*////////SECCIONES////////*/
+    /*NOSOTROS*/
     .gal {
         flex-direction: row;
         flex-wrap: wrap;
@@ -472,54 +499,39 @@ ul li .active {
         width: 40%;
         margin: 5px;
     }
-    /* SECTION PLANES */
-    .divPlanes {
-        height: 16vh;
-    }
-    .divPlanesSecundario {
-        height: 12vh;
-        padding-top: 15px;
-    }
 }
 @media (min-width:1024px) {
-    body {
-        width: 100%;
-    }
-    .header {
-        height: 250px;
-    }
     .headerLogo img {
         width: 200px;
+        margin-bottom: 10px;
     }
      /*MENU*/
     .navMenu {
         font-size: 24px;
     }
     .navMenu ul {
-        height: 50px;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    /*SECTION PORTADA*/
+    /*PORTADA*/
     .section {
         background-image: url(img/home1980.jpg);
         background-size: cover;
-        height: 430px;
     }
     .sectionDiv {
-        width: 47%;
-        height: 80%;
+        width: 55%;
         margin-left: 30px;
     }
     .sectionDiv h1 {
         font-size: 60px;
     }
     .sectionDiv p {
-        font-size: 23px;
-        margin-top: 1%;
+        font-size: 26px;
+        margin-top: 4%;
     }
     /*MAIN*/
     .main {
         flex-direction: row;
-       height: 50vh;
     }
     .mainSection {
         width: 50%;
@@ -566,8 +578,7 @@ ul li .active {
     /*GRILLA*/
     .grilla {
         width: 70%;
-        height: 450px;
-        margin-left: 15%;
+       margin: auto;
     }
     .grilla h3 {
         font-size: 26px;
@@ -581,29 +592,17 @@ ul li .active {
     }
     /*FOOTER*/
     .footer {
-        height: 50px;
         margin-top: 60px;
     }
     .footer p {
         font-size: 24px;
         margin: 12px;
     }
-    /*SECCIONES*/
-    /*ENTRENAMIENTOS*/
-    .sectionEntrenamiento h1 {
-        font-size: 40px;
-    }
-    .articleEntrenamiento h2 {
-        font-size: 34px;
-        font-weight: bold;
-    }
-    .articleEntrenamiento p {
-        font-size: 24px;
-    }
+    /*////////SECCIONES////////*/
     /*NOSOTROS*/
-    .nosotros article {
-        justify-content: center;
-    } 
+    .nosotros {
+        margin: 20px 15%;
+    }
     .nosotros article h1 {
         font-size: 26px;
     }
@@ -622,8 +621,25 @@ ul li .active {
     .gal img {
         width: 45%;
         margin: 5px;
-    }    
-    /* PLANES */
+    }   
+    /*ENTRENAMIENTOS*/
+    .sectionEntrenamiento h1 {
+        font-size: 40px;
+    }
+    .divEntrenamiento h2 {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .divEntrenamiento p {
+        font-size: 24px;
+        margin: 5px 12%;
+    } 
+    .videoContainer {
+        width: 65%;
+        height: 60vh;
+        margin-top: 5%;
+    }
+    /*PLANES*/
     .divPrincipalPlanes {
         display: flex;
         flex-direction: row;
@@ -633,19 +649,18 @@ ul li .active {
     }   
     .planes h1 {
         font-size: 40px;
-        margin-top: 30px;
+        margin: 30px 5%;
     }
     .divPlanes {
         width: 45%;
-        height: 22vh;
         margin: 50px 20px;
     }    
     .divPlanes h3 {
         font-size: 32px;
     }
     .divPlanesSecundario{
-        height: 15vh;
         padding-top: 18px;
+        margin: 20px 10%;
     }
     .divPlanesSecundario h4 {
         font-size: 28px;
@@ -663,6 +678,6 @@ ul li .active {
         width: 50%;
     }
     .form {
-        width: 95%;
+        padding: 15px;
     }
 }
